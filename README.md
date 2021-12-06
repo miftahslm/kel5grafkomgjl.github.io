@@ -1,1 +1,8 @@
-# kel5grafkomgjl.github.io
+KELOMPOK 5 :
+1. RESKAL                           (E1E119011)
+2. FADLI BRILIAN DAKSA              (E1E119053)
+3. DHEA ANGELLENA ENGEL             (E1E120005)
+4. MIFTAHUL JANNAH SALAM            (E1E120033)
+5. YUNDA PUJI LESTARI               (E1E120053)
+6. LA ODE YAMIN ARSY FADILLAH MBOTA (E1E120077)
+7. WAHYUDI MALIHI                   (E1E120099)
