@@ -52,8 +52,8 @@ elif y1 == y2:
     titikA = []
     titikB = []
     for i in range (1,y2,1):
-    plt.plot(titikA,titikB)
-    plt.show()
+        plt.plot(titikA,titikB)
+        plt.show()
 
 # plt.plot digunakan agar mathplotlib membuat titik pertemuan kordinat x,y
 # plt.show digunakan agar mathplotlib menampilkan titik titik kordinat dari garis garis yang di lalui
