@@ -1,3 +1,8 @@
+# Numpy merupakan singkatan Numerical Python yang digunakan dalam memproses array
+# Matplotlib digunakan untuk memvisualisasikan data kordinat menjadi garis
+import numpy as np
+import matplotlib.pyplot as plt
+
 # Menginisialisasikan kordinat (x1,y1) dan kordinat (x2,y2)
 x1 = int(input('Masukan x1  : '))
 y1 = int(input('Masukan y1  : '))
@@ -27,6 +32,9 @@ if x1 == x2:
     titikB = []
     while i < y2:
         i+=1
+    plt.plot(titikA,titikB)
+    plt.show()
+
 
 # 2) Jika y1 = y2 (garis horizontal), maka :
 #    a. x = x + 1 dan y tetap
@@ -38,6 +46,11 @@ elif y1 == y2:
     titikB = []
     while i < y2:
         i+=1
+    plt.plot(titikA,titikB)
+    plt.show()
+
+# plt.plot digunakan agar mathplotlib membuat titik pertemuan kordinat x,y
+# plt.show digunakan agar mathplotlib menampilkan titik titik kordinat dari garis garis yang di lalui
 
 # 3) Jika 2 kondisi di atas salah, maka :
 #    a. hitung kemiringan garis dengan m = (y2 - y1) / (x2 - x1) 
@@ -46,3 +59,4 @@ elif y1 == y2:
 #    d. lakukan pembulatan pada y
 #    e. gambar titik (x, y(pembulatan))
 #    f. x = x + 1
+
