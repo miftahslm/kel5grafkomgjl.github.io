@@ -43,8 +43,6 @@ if x1 == x2:
     plt.plot(titikA,titikB)
     plt.show()
 
-
-
 # 2) Jika y1 = y2 (garis horizontal), maka :
 #    a. x = x + 1 dan y tetap
 #    b. gambar titik kordinat (x,y)
@@ -54,8 +52,8 @@ elif y1 == y2:
     titikA = []
     titikB = []
     for i in range (1,y2,1):
-        plt.plot(titikA,titikB)
-        plt.show()
+    plt.plot(titikA,titikB)
+    plt.show()
 
 # plt.plot digunakan agar mathplotlib membuat titik pertemuan kordinat x,y
 # plt.show digunakan agar mathplotlib menampilkan titik titik kordinat dari garis garis yang di lalui
@@ -71,7 +69,7 @@ elif y1 == y2:
 else:
     titikA = []
     titikB = []
-    for i in range (0,N,1):
+    while i <= N:
         m = nilaiY / nilaiX
         rumusY = m * (x - x1) + y1
         kordinatY = round(rumusY)
@@ -79,10 +77,10 @@ else:
         print('Garis yang di lewati yaitu', x-1,',', kordinatY)
         titikA.append(x-1)
         titikB.append(kordinatY)
+        i+=1
 
     plt.plot(titikA,titikB)
     plt.show()
-
 # apppend digunakan untuk menambah item ke dalam array atau list
 # plt.plot digunakan agar mathplotlib membuat titik pertemuan kordinat x,y
 # plt.show digunakan agar mathplotlib menampilkan titik titik kordinat dari garis garis yang di lalui
