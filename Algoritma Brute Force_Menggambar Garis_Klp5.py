@@ -69,7 +69,6 @@ else:
         print('Garis yang di lewati yaitu', x-1,',', kordinatY)
         titikA.append(x-1)
         titikB.append(kordinatY)
-        i+=1
 
     plt.plot(titikA,titikB)
     plt.show()
