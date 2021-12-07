@@ -30,9 +30,16 @@ i = 1
 if x1 == x2:
     titikA = []
     titikB = []
-    for i in range (1,y2,1):
-    plt.plot(titikA,titikB)
-    plt.show()
+    while i < y2:
+        if y1 == y2:
+            print('Garis yang di lewati yaitu', x,',', y )
+            titikA.append(x)
+            titikB.append(y)
+        else:
+            print('Garis yang di lewati yaitu', x,',', y+i )
+            titikA.append(x)
+            titikB.append(y+i)
+        i+=1
 
 
 # 2) Jika y1 = y2 (garis horizontal), maka :
