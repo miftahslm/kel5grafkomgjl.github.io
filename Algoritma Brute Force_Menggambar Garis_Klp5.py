@@ -30,16 +30,7 @@ i = 1
 if x1 == x2:
     titikA = []
     titikB = []
-    while i < y2:
-        if y1 == y2:
-            print('Garis yang di lewati yaitu', x,',', y )
-            titikA.append(x)
-            titikB.append(y)
-        else:
-            print('Garis yang di lewati yaitu', x,',', y+i )
-            titikA.append(x)
-            titikB.append(y+i)
-        i+=1
+    for i in range (1,y2,1):
     plt.plot(titikA,titikB)
     plt.show()
 
@@ -52,16 +43,7 @@ if x1 == x2:
 elif y1 == y2:
     titikA = []
     titikB = []
-    while i < y2:
-        if x1 == x2:
-            print('Garis yang di lewati yaitu', x,',', y )
-            titikA.append(x)
-            titikB.append(y)
-        else:
-            print('Garis yang di lewati yaitu', x+i,',', y )
-            titikA.append(x+i)
-            titikB.append(y)
-        i+=1
+    for i in range (1,y2,1):
     plt.plot(titikA,titikB)
     plt.show()
 
@@ -79,7 +61,7 @@ elif y1 == y2:
 else:
     titikA = []
     titikB = []
-    while i <= N:
+    for i in range (0,N,1):
         m = nilaiY / nilaiX
         rumusY = m * (x - x1) + y1
         kordinatY = round(rumusY)
